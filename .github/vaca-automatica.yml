@@ -1,0 +1,24 @@
+name: Mi primer flujo con NPM
+
+# Cuándo se ejecuta: cada vez que hagas un "push" (subas cambios)
+on: [push]
+on: [pull-request]
+
+jobs:
+  ejecutar-vaca:
+    runs-on: ubuntu-latest # El sistema operativo que nos presta GitHub
+
+    steps:
+      - name: Descargar mi codigo
+        uses: actions/checkout@v4
+
+      - name: Instalar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Instalar dependencias (El comando magico)
+        run: npm ci
+
+      - name: Ejecutar la vaca en la nube
+        run: npm run vaca
