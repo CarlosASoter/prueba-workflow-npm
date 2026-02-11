@@ -19,5 +19,11 @@ jobs:
       - name: Instalar dependencias (El comando magico)
         run: npm ci
 
+      - name: Verificar Estilo (Prettier)
+        run: npm run format
+
+      - name: Verificar Lógica (ESLint)
+        run: npm run lint
+
       - name: Ejecutar la vaca en la nube
         run: npm run vaca
