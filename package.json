@@ -1,0 +1,35 @@
+{
+  "name": "prueba-workflow-npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "inicio": "echo Hola, esto es mi primer script",
+    "construir": "echo Aqui es donde construiria mi app",
+    "prueba": "echo Aqui pasaria los tests",
+    "vaca": "cowsay Hola Carlos, ya se usar NPM",
+    "limpiar": "rimraf node_modules",
+    "preparar": "npm run limpiar && npm install && npm run vaca",
+    "fallo": "echo Rompiendo todo && exit 1",
+    "intento": "npm run fallo && npm run vaca"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlosASoter/prueba-workflow-npm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/CarlosASoter/prueba-workflow-npm/issues"
+  },
+  "homepage": "https://github.com/CarlosASoter/prueba-workflow-npm#readme",
+  "dependencies": {
+    "cowsay": "^1.6.0"
+  },
+  "devDependencies": {
+    "rimraf": "^6.1.2"
+  }
+}
