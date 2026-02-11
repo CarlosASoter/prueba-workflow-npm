@@ -1,8 +1,7 @@
 name: Mi primer flujo con NPM
 
 # Cuándo se ejecuta: cada vez que hagas un "push" (subas cambios)
-on: [push]
-on: [pull-request]
+on: [push, pull_request]
 
 jobs:
   ejecutar-vaca:

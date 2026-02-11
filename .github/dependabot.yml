@@ -1,0 +1,9 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"  # Vigila mis paquetes de NPM
+    directory: "/"            # Están en la carpeta raíz
+    schedule:
+      interval: "weekly"      # Revisa una vez a la semana (para no agobiarte)
+      day: "monday"           # Hazlo los lunes por la mañana
+      time: "09:00"
+    open-pull-requests-limit: 10 # No me abras más de 10 avisos a la vez
