@@ -1,9 +1,9 @@
 const persona = {
-  nombre: 'Carlos',
-  apellido: 'Lopez',
+  nombre:     'Carlos'          ,
+  apellido:       'Lopez'        ,
   edad: 30,
   profesion:
-    'Desarrollador Full Stack con muchos años de experiencia en diferentes tecnologias modernas',
+                 'Desarrollador Full Stack con muchos años de experiencia en diferentes tecnologias modernas',
 };
 
 const saludar = (nombre) => {
