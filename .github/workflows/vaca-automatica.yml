@@ -19,8 +19,8 @@ jobs:
       - name: Instalar dependencias (El comando magico)
         run: npm ci
 
-      - name: Verificar Estilo (Prettier)
-        run: npm run format
+      - name: Arregla Estilo (Prettier)
+        run: npm run format:fix
 
       - name: Verificar Lógica (ESLint)
         run: npm run lint
